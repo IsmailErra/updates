@@ -1,26 +1,31 @@
-# updates
+# ChainSOC – Automated Decentralized SOC Prototype
 
-## Objectif du projet
+## Project Objective
 
-L’objectif de ce projet est de créer un prototype simplifié de SOC (Security Operations Center) distribué sur plusieurs machines.
+ChainSOC is a simplified SOC prototype built to automate log monitoring across multiple machines.
 
-Le système doit :
+The system is designed to:
 
-- collecter des logs
-- détecter une activité suspecte
-- générer des alertes
-- stocker les logs de manière sécurisée
-- automatiser tout le processus
+- collect logs
+- detect suspicious activity
+- generate alerts
+- store logs securely
+- automate the entire workflow
 
 ---
 
-# Architecture du projet
+# Architecture
 
-Le projet utilise **3 machines virtuelles** :
+The project uses **3 virtual machines**:
 
 ## 1. Target Machine
-Cette machine représente le système surveillé.
+Represents the monitored system.
 
-Son rôle :
+Role:
+- generates logs
+- simulates suspicious activity
 
-- génér
+Example:
+
+```bash
+logger "chainsoc_test_ALERT"
